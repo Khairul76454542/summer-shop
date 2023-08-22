@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/846cbe3901.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Shopping</title>
+  </head>
+
+  <body class="container mx-auto">
+    <header class="bg-[#F9F6E2] p-10">
+      <div class="flex flex-wrap md:flex-nowrap">
+        <div
+          class="md:w-1/2 w-full lg:w-1/2 flex justify-center items-center flex-col flex-wrap md:flex-nowrap lg:flex-nowrap"
+        >
+          <p class="text-[32px]">---SALE FEVER ---</p>
+          <h1 class="text-[58px] font-bold">
+            Purchase TK 200 or <br />
+            above & get <span class="text-[#E527B2]">20% off</span>
+          </h1>
+          <div class="text-[24px] flex gap-2 justify-center items-center">
+            <p>Ues Promo Code</p>
+            <button
+              class="py-2 px-3 rounded-lg text-center border bg-[#E527B2]"
+            >
+              SELL200
+            </button>
+          </div>
+        </div>
+        <div class="lg:w-1/2 md:w-1/2 w-full">
+          <img class="w-[506px] h-[508px]" src="./images/Summer 1.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <main class="grid grid-cols-1 md:grid-cols-3 mt-10">
+      <div
+        class="col-span-1 md:hidden lg:hidden space-y-8 flex justify-center ms-10 flex-col"
+      >
+        <div>
+          <p>Have Coupon ?</p>
+          <div>
+            <input type="text " placeholder="Coupon code " />
+            <button
+              class="font-semibold py-2 px-3 rounded-lg text-center border bg-[#E527B2]"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+        
+        <div class="space-y-3">
+          <p>Total price: 243.00 TK</p>
+          <p>Discount: 51.00 TK</p>
+          <p>total: 205.00 TK</p>
+          <div>
+            <!-- You can open the modal using ID.showModal() method -->
+          </div>
+        </div>
+      </div>
+      <div class="col-span-2">
+        <section class="mt-10">
+          <h1 class="tex-[40px] font-semibold">Kitchenware</h1>
+          <div
+            class="card-section grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 mt-10"
+          >
+            <div
+              class="card flex justify-center items-center flex-col"
+              onclick="card1()"
+            >
+              <img src="./images/prod1.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold" id="title-1">
+                K. Accessories
+              </p>
+              <p class="text-[20px] text-slate-400">
+                <span id="card-1">39.00 </span> TK.
+              </p>
+            </div>
+            <div
+              class="card flex justify-center items-center flex-col"
+              onclick="card2()"
+            >
+              <img src="./images/prod2.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold" id="title-2">
+                K. Accessories
+              </p>
+              <p class="text-[20px] text-slate-400">
+                <span id="card-2">25.00</span> TK
+              </p>
+            </div>
+            <div
+              class="card flex justify-center items-center flex-col"
+              onclick="card3()"
+            >
+              <img src="./images/prod3.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold" id="title-3">Home Cooker</p>
+              <p class="text-[20px] text-slate-400">
+                <span id="card-3">49.00</span> TK
+              </p>
+            </div>
+          </div
+        </section>
+        <section class="mt-10">
+          <h1 class="tex-[40px] font-semibold">Kitchenware</h1>
+          <div
+            class="card-section grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 mt-10"
+          >
+            <div class="card flex justify-center items-center flex-col" onclick="card4()">
+              <img src="./images/prod4.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold" id="title-4">Sports Back Cap</p>
+              <p class="text-[20px] text-slate-400"><span id="card-4">49.00</span> TK</p>
+            </div>
+            <div class="card flex justify-center items-center flex-col" onclick="card5()">
+              <img src="./images/prod5.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold" id="title-5">Full Jersey Set</p>
+              <p class="text-[20px] text-slate-400"><span id="card-5">69.00</span> TK</p>
+            </div>
+            <div class="card flex justify-center items-center flex-col" onclick="card6()">
+              <img src="./images/prod6.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold" id="title-6">Sports cates</p>
+              <p class="text-[20px] text-slate-400"><span id="card-6">159.00</span> TK</p>
+            </div>
+          </div>
+        </section>
+        <section class="mt-10">
+          <h1 class="tex-[40px] font-semibold">Kitchenware</h1>
+          <div
+            class="card-section grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 mt-10"
+          >
+            <div class="card flex justify-center items-center flex-col">
+              <img src="./images/prod7.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold">Single Relax Chair</p>
+              <p class="text-[20px] text-slate-400">185.00 TK</p>
+            </div>
+            <div class="card flex justify-center items-center flex-col">
+              <img src="./images/prod8.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold">Children play</p>
+              <p class="text-[20px] text-slate-400">299.00 TK</p>
+            </div>
+            <div class="card flex justify-center items-center flex-col">
+              <img src="./images/prod9.png" alt="" />
+              <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-[20px] font-semibold">Flexible Sofa</p>
+              <p class="text-[20px] text-slate-400">339.00 TK</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div
+        class="col-span-1 hidden md:block lg:block space-y-8 flex justify-center items-center flex-col"
+      >
+        <div>
+          <p>Have Coupon ?</p>
+          <div>
+            <input type="text " placeholder="Coupon code " />
+            <button
+              class="font-semibold py-2 px-3 rounded-lg text-center border bg-[#E527B2]"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+        <div>
+          <ul id="list">
+           
+          </ul>
+        </div>
+        <div class="space-y-3">
+          <p>Total price: <span id="total-price">243.00</span> TK</p>
+          <p>Discount: 51.00 TK</p>
+          <p>total: <span id="final">205.00</span> TK</p>
+          <div>
+            <!-- You can open the modal using ID.showModal() method -->
+            <button
+              class="font-semibold py-2 px-3 rounded-lg text-center border bg-[#E527B2]"
+              onclick="my_modal_4.showModal()"
+            >
+              Make Purchase
+            </button>
+            <dialog id="my_modal_4" class="modal">
+              <form method="dialog" class="modal-box w-2/4 max-w-5xl">
+                <div class="flex flex-col justify-center items-center">
+                  <img src="./images/congo.png" alt="" />
+                  <h3 class="font-bold text-lg">Congratulations!</h3>
+                  <p class="py-4">Your Purchase the product</p>
+                </div>
+                <button
+                  class="font-semibold py-2 px-3 rounded-lg mx-auto ms-32 text-center border bg-[#E527B2]"
+                >
+                  Go Home
+                </button>
+                <div class="modal-action">
+                  <!-- if there is a button, it will close the modal -->
+                  <button class="btn">Close</button>
+                </div>
+              </form>
+            </dialog>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/Purchase.js"></script>
+    <footer></footer>
+  </body>
+</html>
